@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: {{ $app_name }}
-        image: {{ .Values.image.repo }}:{{ .Chart.AppVersion }}
+        image: {{ .Values.image.repo }}:{{ .Values.image.tag }}
         ports:
         - containerPort: {{ $app_port }}
 ---
